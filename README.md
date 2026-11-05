@@ -1,11 +1,13 @@
 # Niki & Balázs · Wedding gallery
 
 A small static photo gallery for family, published with GitHub Pages:
-https://morvaybalazs.github.io/wedding-gallery/
+https://nikiandbalazs.github.io/
 
 Links that open in Polish or Hungarian:
-- https://morvaybalazs.github.io/wedding-gallery/?lang=pl
-- https://morvaybalazs.github.io/wedding-gallery/?lang=hu
+- https://nikiandbalazs.github.io/?lang=pl
+- https://nikiandbalazs.github.io/?lang=hu
+
+The first address, https://morvaybalazs.github.io/wedding-gallery/, forwards here and keeps any `?lang=`. That forward is the `forward` branch of the old `morvaybalazs/wedding-gallery` repo, so keep that repo.
 
 There is no framework and no build tool, just HTML, CSS and JavaScript.
 

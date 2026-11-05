@@ -10,7 +10,7 @@ const OPENER_ID = "20";  // the carousel starts with the two of us, then runs in
 const PREVIEW_ID = "30"; // the photo on the "Download all" card
 const SLIDESHOW_MS = 3000;
 const EASE = "cubic-bezier(.2, .7, .2, 1)";
-const ZIP_BASE = "https://github.com/morvaybalazs/wedding-gallery/releases/download/photos/";
+const ZIP_BASE = "https://github.com/nikiandbalazs/nikiandbalazs.github.io/releases/download/photos/";
 const ZIP_LABELS = { "colour": "zipColour", "bw": "zipBw", "framed-colour": "zipFramedColour", "framed-bw": "zipFramedBw" };
 const ICON_DOWNLOAD = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>';
 const ICON_TICK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 12.5l3.5 3.5 7.5-8"/></svg>';
