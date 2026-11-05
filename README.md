@@ -7,8 +7,6 @@ Links that open in Polish or Hungarian:
 - https://nikiandbalazs.github.io/?lang=pl
 - https://nikiandbalazs.github.io/?lang=hu
 
-The first address, https://morvaybalazs.github.io/wedding-gallery/, forwards here and keeps any `?lang=`. That forward is the `forward` branch of the old `morvaybalazs/wedding-gallery` repo, so keep that repo.
-
 There is no framework and no build tool, just HTML, CSS and JavaScript.
 
 ## What's on the page
