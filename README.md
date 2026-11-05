@@ -21,7 +21,7 @@ There is no framework and no build tool, just HTML, CSS and JavaScript.
 - **Chapter shortcuts:** under the carousel, linking to the two chapters.
 - **Grid in two chapters:** The ceremony (01–26) and In the garden (28–53). Rows ease into place as you scroll.
 - **Colour | Black & white, and Framed:**
-  - black & white framed prints by default;
+  - colour without the frame by default: true to the day, and the full-size files (the framed copies are only about 4 megapixels);
   - each visitor's choice is remembered;
   - a change fades across the photos, and the page keeps its place;
   - the main "Download all" button follows the version on screen.

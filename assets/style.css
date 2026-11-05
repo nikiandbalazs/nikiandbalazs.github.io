@@ -777,7 +777,13 @@ main {
   .seg button { padding: 0 10px; font-size: 14px; }
   .chip { padding: 0 12px 0 8px; gap: 7px; font-size: 14px; }
   .viewer-top .count { min-width: 0; }
-  .text-btn { padding: 0 6px; }
+  /* Room for "Pokaz slajdów" and "Zamknij" on one line. */
+  .viewer-top { gap: 4px; padding-inline: 12px; }
+  .text-btn { gap: 5px; padding: 0 4px; white-space: nowrap; }
+  /* Room for "Kép mentése" and "Zapisz zdjęcie" on one line. */
+  .viewer-bottom { gap: 8px; }
+  .round.big { width: 48px; height: 48px; }
+  .download { gap: 8px; padding: 0 12px; }
 }
 
 @media (max-width: 340px) {

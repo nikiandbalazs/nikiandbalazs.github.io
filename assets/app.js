@@ -11,7 +11,7 @@ const PREVIEW_ID = "30"; // the photo on the "Download all" card
 const SLIDESHOW_MS = 3000;
 const EASE = "cubic-bezier(.2, .7, .2, 1)";
 const ZIP_BASE = "https://github.com/morvaybalazs/wedding-gallery/releases/download/photos/";
-const ZIP_LABELS = { "framed-bw": "zipFramedBw", "framed-colour": "zipFramedColour", "bw": "zipBw", "colour": "zipColour" };
+const ZIP_LABELS = { "colour": "zipColour", "bw": "zipBw", "framed-colour": "zipFramedColour", "framed-bw": "zipFramedBw" };
 const ICON_DOWNLOAD = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>';
 const ICON_TICK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 12.5l3.5 3.5 7.5-8"/></svg>';
 
@@ -101,12 +101,13 @@ function applyLanguage() {
 
 /* ---------- Colour / Black & white and Framed ---------- */
 
-// First-time visitors see black & white prints; anyone who changes it keeps their choice.
-const state = { tone: "bw", framed: true };
+// First-time visitors see colour without the frame: true to the day, and the full-size files
+// (the framed copies are much smaller). Anyone who changes it keeps their choice.
+const state = { tone: "colour", framed: false };
 const savedView = store.get("gallery-view");
 if (savedView) {
-  state.tone = savedView.tone === "colour" ? "colour" : "bw";
-  state.framed = savedView.framed !== false;
+  state.tone = savedView.tone === "bw" ? "bw" : "colour";
+  state.framed = savedView.framed === true;
 }
 
 const version = () => (state.framed ? "framed-" : "") + state.tone;
